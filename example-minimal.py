@@ -24,11 +24,12 @@ class device_handler(debounce_handler):
     """Publishes the on/off state requested,
        and the IP address of the Echo making the request.
     """
-    TRIGGERS = {"device": 52000}
+    TRIGGERS = {"Stardust Destroyer": 52000}
 
     def act(self, client_address, state, name):
         print "State", state, "on ", name, "from client @", client_address
         return True
+        #print "echo test456"
 
 if __name__ == "__main__":
     # Startup the fauxmo server
