@@ -319,20 +319,21 @@ class fauxmo(upnp_device):
                 dbg("Responding to ON for %s" % self.name)
                 print "echo test123 on!"
                 ###
-                ROOMBA_PORT = "/dev/ttyUSB0"
-                robot = create.Create(ROOMBA_PORT)
-                robot.toSafeMode()
-                robot.play_starwars()
-                #fauxmo.play_starwars(robot)
-                robot.close()
+                #ROOMBA_PORT = "/dev/ttyUSB0"
+                #robot = create.Create(ROOMBA_PORT)
+                #robot.toSafeMode()
+                #robot.play_starwars()
+                #robot.close()
 
                 ser = serial.Serial('/dev/ttyUSB0', 115200)
                 ser.close()
+                time.sleep(0.03)
 
                 ser.open()
                 ser.write(chr(128)) # 128: start command
+                time.sleep(0.03)
                 ser.write(chr(131)) # 131: safe command
-                time.sleep(1)
+                time.sleep(0.03)
                 ser.write(chr(135)) # 135: clean command
                 ser.close()
                 ###
