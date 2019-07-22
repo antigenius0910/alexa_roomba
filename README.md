@@ -36,3 +36,32 @@ The main class is create.py which contains everything to talk to the Roomba. To 
     robot.close()
     
 Instructions for installation and usage [available on Instructables here](http://www.instructables.com/id/Hacking-the-Amazon-Echo/), brought by [FabricateIO](http://fabricate.io)
+
+
+### Create a on boot deamon
+
+     pi@stardust_destroyer:~/echo $ cat /etc/systemd/system/roomba.service
+     [Unit]
+     Description=Roomba keepalive daemon
+     ## make sure we only start the service after network is up
+     Wants=network-online.target
+     After=network.target
+
+     [Service]
+     ## use 'Type=forking' if the service backgrounds itself
+     ## other values are Type=simple (default) and Type=oneshot
+     Type=forking
+     ## here we can set custom environment variables
+     ExecStart=/home/pi/echo/roomba-start.sh 
+     ExecStop=/usr/bin/killall -9 python
+     ### NOTE: you can have multiple `ExecStop` lines
+     # don't use 'nobody' if your script needs to access user files
+     # (if User is not set the service will run as root)
+     #User=nobody
+
+     # Useful during debugging; remove it once the service is working
+     StandardOutput=console
+
+     [Install]
+     WantedBy=multi-user.target
+
