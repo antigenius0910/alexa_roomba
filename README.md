@@ -39,6 +39,7 @@ Instructions for installation and usage [available on Instructables here](http:/
 ### Create a on boot deamon
 
      pi@stardust_destroyer:~/echo $ cat /etc/systemd/system/roomba.service
+
      [Unit]
      Description=Roomba keepalive daemon
      ## make sure we only start the service after network is up
@@ -50,8 +51,8 @@ Instructions for installation and usage [available on Instructables here](http:/
      ## other values are Type=simple (default) and Type=oneshot
      Type=forking
      ## here we can set custom environment variables
-     ExecStart=/home/pi/echo/roomba-start.sh 
-     ExecStop=/usr/bin/killall -9 python
+     ExecStart=/home/pi/alexa_roomba/roomba-start.sh 
+     #ExecStop=/usr/bin/killall -9 python
      ### NOTE: you can have multiple `ExecStop` lines
      # don't use 'nobody' if your script needs to access user files
      # (if User is not set the service will run as root)
