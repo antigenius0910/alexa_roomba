@@ -1,9 +1,11 @@
 ## alexa_echo
-For controlling Roomba with the Amazon Echo.
+Controlling Roomba with the Amazon Echo.
 
 After you tell Alexa "turn on startdust destroyer" Roomba will start singing "The imperial march" and start to clean.
 
-See it in action https://www.facebook.com/yenkuang.chuang/videos/10219907873027662?locale=en
+See it in action 
+
+https://user-images.githubusercontent.com/5915590/138384009-169e9dc4-5142-4027-aa18-df4c367915f5.mp4
 
 For Alexa function see [here](https://github.com/antigenius0910/alexa_roomba/blob/master/fauxmo.py#L315)
 
