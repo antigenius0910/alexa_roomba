@@ -11,15 +11,27 @@ For Alexa function see [here](https://github.com/antigenius0910/alexa_roomba/blo
 
 For singing Roomba function see [here](https://github.com/antigenius0910/alexa_roomba/blob/master/create.py#L1474)
 
+### Hardware Setup
+
+For detailed hardware assembly instructions, wiring diagrams, and component specifications, see **[HARDWARE_SETUP.md](HARDWARE_SETUP.md)**.
+
+**Required Hardware:**
+- iRobot Roomba (500/600/700/800 series)
+- Raspberry Pi Zero W (or any Pi with WiFi)
+- DC-DC Converter (14.4V → 5V)
+- USB-to-Serial cable
+- Amazon Echo device
+
 ### Quick Start
 
-    1. Create a [Python Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
-    2. git clone *this_repo*
-    3. cd *this_repo*
-    4. pip install -r requirements.txt
-    4. python example-minimal.py
-    6. Tell Echo, "discover my devices"
-    7. Use Echo's "turn on startdust destroyer" and "turn off startdust destroyer" to see script output
+    1. Complete the [Hardware Setup](HARDWARE_SETUP.md) (wiring, Pi installation)
+    2. Create a [Python Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+    3. git clone *this_repo*
+    4. cd *this_repo*
+    5. pip install -r requirements.txt
+    6. python example-minimal.py
+    7. Tell Echo, "discover my devices"
+    8. Use Echo's "turn on stardust destroyer" and "turn off stardust destroyer" to see script output
 
 
 ### Use as library
