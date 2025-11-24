@@ -1,0 +1,35 @@
+[Unit]
+Description=Alexa Roomba Voice Control Service
+Documentation=https://github.com/antigenius0910/alexa_roomba
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=forking
+User=pi
+Group=pi
+WorkingDirectory=INSTALL_DIR
+ExecStart=INSTALL_DIR/roomba-start.sh
+ExecStop=/usr/bin/pkill -f "python.*example-minimal.py"
+PIDFile=INSTALL_DIR/roomba.pid
+
+# Restart policy
+Restart=on-failure
+RestartSec=10
+StartLimitInterval=300
+StartLimitBurst=5
+
+# Logging
+StandardOutput=append:INSTALL_DIR/logs/roomba_service.log
+StandardError=append:INSTALL_DIR/logs/roomba_service.log
+SyslogIdentifier=roomba
+
+# Security hardening
+PrivateTmp=true
+NoNewPrivileges=true
+
+# Environment
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
