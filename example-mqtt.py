@@ -28,10 +28,10 @@ class light_handler(debounce_handler):
     def act(self, client_address, state):
         if client_address == ECHO_LIVINGROOM:
             self.mqtt.publish("livingroom", state)
-            print "Published to living room"
+            print("Published to living room")
         elif client_address == ECHO_KITCHEN:
             self.mqtt.publish("kitchen", state)
-            print "Published to kitchen"
+            print("Published to kitchen")
         return True
 
 if __name__ == "__main__":
@@ -61,6 +61,6 @@ if __name__ == "__main__":
             # Allow time for a ctrl-c to stop the process
             p.poll(100)
             time.sleep(0.1)
-        except Exception, e:
+        except Exception as e:
             logging.critical("Critical exception: " + str(e))
             break
