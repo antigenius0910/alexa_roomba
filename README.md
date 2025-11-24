@@ -34,7 +34,7 @@ https://user-images.githubusercontent.com/5915590/138384009-169e9dc4-5142-4027-a
 
 ## Hardware Setup
 
-**📋 [Complete Hardware Setup Guide →](HARDWARE_SETUP.md)**
+**📋 [Complete Hardware Setup Guide →](docs/HARDWARE_SETUP.md)**
 
 This project requires hardware assembly inside your Roomba. The setup guide includes:
 - ✅ Detailed component list with specifications
@@ -124,22 +124,40 @@ python example-minimal.py
 
 ```
 alexa_roomba/
-├── roomba/                  # Core robot control package
-│   ├── __init__.py         # Package initialization
-│   ├── commands.py         # Command byte constants
-│   ├── sensors.py          # Sensor definitions
-│   ├── music.py            # MIDI note constants
-│   ├── utils.py            # Helper functions
-│   └── robot.py            # Main Create class
-├── examples/               # Example scripts
-│   ├── simple_movement.py  # Basic movement demo
-│   ├── play_music.py       # Music playback demo
-│   └── sensor_reading.py   # Sensor data demo
-├── config.py               # Configuration settings
-├── create.py               # Legacy compatibility layer
-├── fauxmo.py               # WeMo emulation for Alexa
-├── debounce_handler.py     # Multi-Echo handler
-└── example-minimal.py      # Minimal Alexa example
+├── roomba/                     # Core robot control package
+│   ├── __init__.py            # Package initialization
+│   ├── commands.py            # Command byte constants
+│   ├── sensors.py             # Sensor definitions
+│   ├── music.py               # MIDI note constants
+│   ├── utils.py               # Helper functions
+│   └── robot.py               # Main Create class
+├── examples/                   # Example scripts & demos
+│   ├── README.md              # Complete examples guide
+│   ├── simple_movement.py     # Basic movement
+│   ├── play_music.py          # Music playback
+│   ├── sensor_reading.py      # Sensor monitoring
+│   ├── wall_following.py      # Autonomous navigation
+│   ├── autonomous_cleaning.py # Coverage planning
+│   ├── alexa_voice_control.py # Voice control
+│   ├── sensor_dashboard.py    # Web dashboard
+│   └── video_demo.py          # Demo script
+├── docs/                       # Documentation
+│   ├── HARDWARE_SETUP.md      # Hardware assembly guide
+│   ├── DEPLOYMENT.md          # Production deployment
+│   ├── PYTHON3_MIGRATION.md   # Python 3 migration notes
+│   └── CONTRIBUTING.md        # Contribution guidelines
+├── legacy/                     # Legacy/deprecated code
+│   ├── example-mqtt.py        # MQTT example
+│   ├── CHIP_name_port_gpio.py # CHIP hardware support
+│   ├── RPi_name_port_gpio.py  # RPi GPIO mapping
+│   └── debounce_handler.py    # Multi-Echo handler
+├── config.py                   # Configuration settings
+├── create.py                   # Core robot control
+├── fauxmo.py                   # WeMo emulation for Alexa
+├── example-minimal.py          # Main Alexa integration
+├── install.sh                  # Automated installer
+├── roomba-start.sh             # Service startup script
+└── requirements.txt            # Python dependencies
 ```
 
 ---
@@ -236,7 +254,7 @@ WantedBy=multi-user.target
 Safely tapping into the Roomba's 14.4V battery required careful voltage regulation. The DC-DC converter needed proper heat dissipation and capacitor placement to prevent voltage spikes during motor startup.
 
 ### 2. Serial Protocol Reverse Engineering
-Implementing the iRobot Open Interface protocol required understanding two's complement arithmetic, byte packing, and timing-sensitive command sequences. See [PYTHON3_MIGRATION.md](PYTHON3_MIGRATION.md) for details on the bytes handling migration.
+Implementing the iRobot Open Interface protocol required understanding two's complement arithmetic, byte packing, and timing-sensitive command sequences. See [PYTHON3_MIGRATION.md](docs/PYTHON3_MIGRATION.md) for details on the bytes handling migration.
 
 ### 3. UPnP Device Emulation
 Emulating a WeMo device for Alexa discovery involved implementing SSDP multicast listening and HTTP response handling with proper UPnP headers.
@@ -248,7 +266,7 @@ Running on Raspberry Pi Zero W required optimizing for limited CPU and memory, i
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+Contributions are welcome! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
 
 ---
 

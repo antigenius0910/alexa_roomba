@@ -36,3 +36,6 @@ logs/
 
 # Generated Service File
 roomba.service
+
+# Media Files
+media/
