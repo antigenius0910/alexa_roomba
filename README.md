@@ -1,4 +1,7 @@
 ## alexa_echo
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Controlling Roomba with the Amazon Echo.
 
 After you tell Alexa "turn on startdust destroyer" Roomba will start singing "The imperial march" and start to clean.
@@ -87,3 +90,8 @@ Instructions for installation and usage [available on Instructables here](http:/
      [Install]
      WantedBy=multi-user.target
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This means you are free to use, modify, and distribute this project for any purpose, including commercial use, as long as you include the original copyright notice.
