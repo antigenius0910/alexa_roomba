@@ -11,6 +11,25 @@ For Alexa function see [here](https://github.com/antigenius0910/alexa_roomba/blo
 
 For singing Roomba function see [here](https://github.com/antigenius0910/alexa_roomba/blob/master/create.py#L1474)
 
+### Hardware Setup
+
+**📋 [Complete Hardware Setup Guide →](HARDWARE_SETUP.md)**
+
+This project requires hardware assembly inside your Roomba. The setup guide includes:
+- ✅ Detailed component list with specifications
+- ✅ **Step-by-step battery tap instructions with photos**
+- ✅ Wiring diagrams and connection points
+- ✅ DC-DC converter setup and voltage testing
+- ✅ Raspberry Pi mounting and serial cable connection
+- ✅ Troubleshooting guide
+
+**Quick Hardware Summary:**
+- iRobot Roomba (500/600/700/800 series)
+- Raspberry Pi Zero W
+- DC-DC Converter (14.4V → 5V)
+- USB-to-Serial cable
+- Amazon Echo device
+
 ### Quick Start
 
     1. Create a [Python Virtual Environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
