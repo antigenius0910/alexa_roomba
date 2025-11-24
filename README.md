@@ -198,6 +198,67 @@ See [examples/](examples/) directory for complete working examples.
 
 ---
 
+## Documentation
+
+Comprehensive documentation is available to help you understand, use, and extend this project:
+
+### 📖 Core Documentation
+
+- **[API Reference](docs/API.md)** - Complete API documentation
+  - All classes, methods, and functions
+  - Parameter descriptions and return values
+  - Code examples for every feature
+  - Constants and configuration options
+  - Best practices and common patterns
+
+- **[Architecture Guide](docs/ARCHITECTURE.md)** - System design and technical details
+  - High-level system overview
+  - Component architecture
+  - Communication protocols (Serial, UPnP/SSDP, HTTP/SSE)
+  - Data flow diagrams
+  - Design patterns and decisions
+  - Hardware and software stack
+  - Performance optimization strategies
+
+- **[Examples Guide](examples/README.md)** - Complete guide to all examples
+  - Beginner to advanced tutorials
+  - Wall-following algorithm
+  - Autonomous cleaning behaviors
+  - Voice control integration
+  - Web dashboard
+  - Video demonstration scripts
+
+### 🔧 Setup & Deployment
+
+- **[Hardware Setup](docs/HARDWARE_SETUP.md)** - Physical assembly guide
+  - Component list and specifications
+  - Step-by-step battery tap instructions with photos
+  - Wiring diagrams
+  - Safety guidelines
+
+- **[Deployment Guide](docs/DEPLOYMENT.md)** - Production deployment
+  - Automated installation
+  - Systemd service configuration
+  - Environment-based configuration
+  - Update and maintenance procedures
+
+### 🐛 Troubleshooting & Support
+
+- **[Troubleshooting Guide](docs/TROUBLESHOOTING.md)** - Solutions to common issues
+  - Quick diagnostics
+  - Connection problems
+  - Alexa integration issues
+  - Robot behavior problems
+  - Hardware debugging
+  - Performance optimization
+
+### 📚 Additional Resources
+
+- **[Python 3 Migration](docs/PYTHON3_MIGRATION.md)** - Migration notes and bytes handling
+- **[Contributing Guidelines](docs/CONTRIBUTING.md)** - How to contribute
+
+---
+
 ## Configuration
 
 Edit `config.py` to customize settings:
