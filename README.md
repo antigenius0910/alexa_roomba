@@ -45,29 +45,6 @@ https://github.com/user-attachments/assets/3c856eaf-ff82-4fb7-a711-889bf7d9a181
 
 ---
 
-## 📑 Table of Contents
-
-- [✨ Features](#-features)
-- [🚀 Quick Start](#-quick-start)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Basic Usage](#basic-usage)
-  - [Alexa Integration](#alexa-integration)
-- [📦 System Requirements](#-system-requirements)
-- [🔧 Hardware Requirements](#-hardware-requirements)
-- [📚 Documentation](#-documentation)
-- [🏗️ Architecture](#️-architecture)
-- [🎯 Use Cases](#-use-cases)
-- [🔬 Technical Highlights](#-technical-highlights)
-- [❓ FAQ](#-faq)
-- [🗺️ Roadmap](#️-roadmap)
-- [🤝 Contributing](#-contributing)
-- [⭐ Show Your Support](#-show-your-support)
-- [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
-
----
-
 ## ✨ Features
 
 <table>
