@@ -517,43 +517,6 @@ Yes! The codebase is modular and well-documented. Check our [Contributing Guide]
 
 ---
 
-## 🗺️ Roadmap
-
-### ✅ Completed
-- [x] Python 3 migration with modern async/await
-- [x] Comprehensive test suite (280+ tests)
-- [x] Complete documentation (API, Architecture, Troubleshooting)
-- [x] Hardware setup guide with photos
-- [x] Multiple example scripts and demos
-- [x] Packaging for pip installation
-
-### 🚧 In Progress
-- [ ] Web dashboard for monitoring and control
-- [ ] REST API for third-party integrations
-- [ ] MQTT support for home automation platforms
-
-### 🔮 Future Plans
-- [ ] Google Home integration
-- [ ] HomeKit support
-- [ ] Mobile app (iOS/Android)
-- [ ] Mapping and navigation visualization
-- [ ] Multi-robot coordination
-- [ ] Machine learning for optimized cleaning patterns
-- [ ] Docker containerization
-- [ ] CI/CD pipeline with GitHub Actions
-
-### 💡 Ideas Under Consideration
-- [ ] Bluetooth control
-- [ ] Camera integration for video streaming
-- [ ] Scheduled cleaning with calendar integration
-- [ ] Energy usage tracking and optimization
-- [ ] Integration with other smart home devices
-- [ ] Voice feedback from Roomba (TTS)
-
-Want to contribute to any of these? Check out our [Contributing Guide](CONTRIBUTING.md)!
-
----
-
 ## 🤝 Contributing
 
 We love contributions from the community! Whether you're fixing bugs, adding features, improving docs, or testing hardware, we appreciate your help.
@@ -628,22 +591,11 @@ in the Software without restriction...
 - **[FabricateIO](http://fabricate.io)** - Original Amazon Echo hacking concept
 - **[Instructables Tutorial](http://www.instructables.com/id/Hacking-the-Amazon-Echo/)** - Initial inspiration
 
-### Core Contributors
-- **Zach Dodds** - Architecture and robotics algorithms
-- **Sean Luke** - Serial protocol implementation
-- **James O'Beirne** - Alexa integration and networking
-- **Martin Schaef** - Python 3 migration and testing
-
 ### Technologies & Tools
 - **[iRobot](https://www.irobot.com/)** - Open Interface specification
 - **[Python Software Foundation](https://www.python.org/)** - Python language
 - **[PySerial](https://github.com/pyserial/pyserial)** - Serial communication library
 - **[Amazon Alexa](https://developer.amazon.com/alexa)** - Voice control platform
-
-### Community
-- All our [contributors](https://github.com/antigenius0910/alexa_roomba/graphs/contributors) who have helped improve this project
-- Everyone who has [starred](https://github.com/antigenius0910/alexa_roomba/stargazers) or [forked](https://github.com/antigenius0910/alexa_roomba/network/members) this repository
-- The open-source community for inspiration and support
 
 ### Special Thanks
 - **Raspberry Pi Foundation** - Affordable embedded computing platform
@@ -782,4 +734,3 @@ For detailed information, see [CONTRIBUTING.md](CONTRIBUTING.md).
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 You are free to use, modify, and distribute this project for any purpose, including commercial use, as long as you include the original copyright notice.
->>>>>>> 3585039 (Add contributing guidelines and open source maturity features)
