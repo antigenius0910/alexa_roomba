@@ -33,7 +33,15 @@ Transform your Roomba into a voice-controlled, music-playing smart home robot
 
 Watch your Roomba come to life! Say *"Alexa, turn on Stardust Destroyer"* and watch it play the Imperial March while starting its cleaning mission.
 
-https://user-images.githubusercontent.com/5915590/138384009-169e9dc4-5142-4027-aa18-df4c367915f5.mp4
+<div align="center">
+
+[![Demo Video](https://user-images.githubusercontent.com/5915590/138384009-169e9dc4-5142-4027-aa18-df4c367915f5.mp4)](https://user-images.githubusercontent.com/5915590/138384009-169e9dc4-5142-4027-aa18-df4c367915f5.mp4)
+
+**▶️ [Click here to watch the demo video](https://user-images.githubusercontent.com/5915590/138384009-169e9dc4-5142-4027-aa18-df4c367915f5.mp4)**
+
+*Roomba playing Imperial March and starting cleaning routine via Alexa voice command*
+
+</div>
 
 ---
 
