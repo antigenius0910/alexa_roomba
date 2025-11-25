@@ -1,0 +1,32 @@
+# GitHub Sponsors funding configuration
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# GitHub sponsors (username)
+github: # antigenius0910
+
+# Patreon username
+patreon: # username
+
+# Open Collective username
+open_collective: # username
+
+# Ko-fi username
+ko_fi: # username
+
+# Tidelift package name (format: platform/package-name)
+tidelift: # pypi/alexa-roomba
+
+# Community Bridge project name
+community_bridge: # project-name
+
+# Liberapay username
+liberapay: # username
+
+# IssueHunt username
+issuehunt: # username
+
+# Buy Me a Coffee username
+custom: # ['https://buymeacoffee.com/username']
+
+# Note: Uncomment and add your funding platforms above
+# This file is included for future use if project accepts sponsorship

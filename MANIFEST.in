@@ -1,0 +1,72 @@
+# Include important documentation files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+
+# Include configuration files
+include requirements.txt
+include pyproject.toml
+include setup.py
+include pytest.ini
+
+# Include all documentation
+recursive-include docs *.md *.rst *.txt
+recursive-include docs *.png *.jpg *.jpeg *.gif
+
+# Include examples (but exclude from wheel)
+graft examples
+prune examples/__pycache__
+
+# Include tests (but exclude from wheel by default)
+graft tests
+prune tests/__pycache__
+exclude tests/*.pyc
+
+# Include package data
+recursive-include roomba *.py
+recursive-include roomba py.typed
+
+# Include GitHub templates
+recursive-include .github *.md *.yml
+
+# Exclude unnecessary files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.dylib
+global-exclude .DS_Store
+global-exclude .git*
+global-exclude *.swp
+global-exclude *.swo
+global-exclude *~
+
+# Exclude development and build files
+prune .pytest_cache
+prune htmlcov
+prune build
+prune dist
+prune .eggs
+prune .tox
+prune .mypy_cache
+exclude .coverage
+exclude .coveragerc
+
+# Exclude legacy code
+prune legacy
+
+# Exclude environment and logs
+prune venv
+prune env
+prune logs
+exclude *.log
+exclude *.pid
+
+# Exclude local configuration
+exclude .env
+exclude .env.local
+exclude config.local.py

@@ -1,0 +1,200 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alexa-roomba"
+version = "1.0.0"
+description = "Voice-controlled Roomba via Amazon Echo with iRobot Open Interface"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Zach Dodds"},
+    {name = "Sean Luke"},
+    {name = "James O'Beirne"},
+    {name = "Martin Schaef"},
+]
+maintainers = [
+    {name = "Alexa Roomba Contributors"},
+]
+keywords = [
+    "roomba",
+    "irobot",
+    "alexa",
+    "echo",
+    "voice-control",
+    "smart-home",
+    "iot",
+    "robotics",
+    "raspberry-pi",
+    "serial",
+    "open-interface",
+    "automation",
+    "home-automation",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Home Automation",
+    "Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator",
+    "Topic :: System :: Hardware :: Hardware Drivers",
+    "Topic :: Software Development :: Embedded Systems",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Environment :: Console",
+    "Environment :: No Input/Output (Daemon)",
+    "Natural Language :: English",
+]
+dependencies = [
+    "requests>=2.31.0",
+    "pyserial>=3.5",
+    "python-dotenv>=1.0.0",
+    "flask>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-mock>=3.10.0",
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+]
+docs = [
+    "sphinx>=4.0.0",
+    "sphinx-rtd-theme>=1.0.0",
+]
+all = [
+    "alexa-roomba[dev,docs]",
+]
+
+[project.urls]
+Homepage = "https://github.com/antigenius0910/alexa_roomba"
+Documentation = "https://github.com/antigenius0910/alexa_roomba/blob/master/docs/"
+Repository = "https://github.com/antigenius0910/alexa_roomba"
+"Bug Reports" = "https://github.com/antigenius0910/alexa_roomba/issues"
+Changelog = "https://github.com/antigenius0910/alexa_roomba/blob/master/CHANGELOG.md"
+
+[tool.setuptools]
+packages = ["roomba"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+roomba = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = [
+    "-v",
+    "--strict-markers",
+    "--tb=short",
+    "--cov=roomba",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+    "--cov-branch",
+]
+markers = [
+    "unit: Unit tests (fast, no external dependencies)",
+    "integration: Integration tests (may use mocked serial)",
+    "hardware: Tests requiring actual hardware (slow, skip by default)",
+    "slow: Slow tests",
+]
+
+[tool.coverage.run]
+source = ["roomba"]
+branch = true
+omit = [
+    "*/tests/*",
+    "*/test_*.py",
+    "*/__pycache__/*",
+    "*/venv/*",
+    "*/env/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "@abstractmethod",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | legacy
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+known_first_party = ["roomba"]
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+strict_equality = true
+
+[[tool.mypy.overrides]]
+module = [
+    "serial.*",
+    "flask.*",
+]
+ignore_missing_imports = true
+
+[tool.flake8]
+max-line-length = 100
+extend-ignore = ["E203", "W503"]
+exclude = [
+    ".git",
+    "__pycache__",
+    "build",
+    "dist",
+    ".eggs",
+    ".venv",
+    "venv",
+    "legacy",
+]
+per-file-ignores = [
+    "__init__.py:F401",
+]

@@ -1,0 +1,13 @@
+# Git mailmap file for consistent author attribution
+# Format: Canonical Name <canonical@email> <commit@email>
+# https://git-scm.com/docs/git-check-mailmap
+
+# Original Authors
+Zach Dodds <zach@example.com>
+Sean Luke <sean@example.com>
+James O'Beirne <james@example.com>
+Martin Schaef <martin@example.com>
+
+# Add additional contributors here as needed
+# Example:
+# Preferred Name <preferred@email.com> <old-commit@email.com>
