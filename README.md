@@ -567,24 +567,6 @@ If you find this project useful, please consider:
 
 ---
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-**TL;DR**: You can use, modify, and distribute this project for any purpose, including commercial use, as long as you include the original copyright notice.
-
-```
-MIT License
-
-Copyright (c) 2025 Zach Dodds, Sean Luke, James O'Beirne, Martin Schaef
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
 ## 🙏 Acknowledgments
 
 ### Original Concept
