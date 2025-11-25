@@ -653,11 +653,6 @@ in the Software without restriction...
 
 ---
 
-<<<<<<< HEAD
-<div align="center">
-=======
-## Documentation
-
 Comprehensive documentation is available in the `docs/` directory:
 
 ### 📚 User Guides
@@ -674,29 +669,6 @@ Comprehensive documentation is available in the `docs/` directory:
 ### 🔒 Policies
 - **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community standards and expectations
 - **[Security Policy](SECURITY.md)** - How to report security vulnerabilities
-
----
-
-## Configuration
->>>>>>> 3585039 (Add contributing guidelines and open source maturity features)
-
-### 🌟 Built with ❤️ by robotics enthusiasts for the maker community
-
-**[⬆ Back to Top](#-alexa-roomba)**
-
-<<<<<<< HEAD
-</div>
-=======
-# Alexa device settings
-FAUXMO_DEVICE_NAME = "Stardust Destroyer"
-FAUXMO_PORT = 52000
-
-# Robot physical parameters
-WHEEL_SPAN_MM = 235.0
-WHEEL_DIAMETER_MM = 72.0
-```
-
----
 
 ## Systemd Service (Auto-start on Boot)
 
