@@ -135,6 +135,33 @@ https://github.com/user-attachments/assets/3c856eaf-ff82-4fb7-a711-889bf7d9a181
 
 ---
 
+## 🔧 Hardware Requirements
+
+### Essential Components
+
+| Item | Specification | Purpose | Approx. Cost |
+|------|--------------|---------|--------------|
+| **iRobot Roomba** | 500/600/700/800 series or Create 2 | Robot platform | $50-300 (used) |
+| **Raspberry Pi** | Pi Zero W / 3 / 4 | Embedded controller | $5-35 |
+| **DC-DC Converter** | 14.4V → 5V, 3A+ | Power for Pi | $5-10 |
+| **USB-Serial Cable** | FTDI or compatible | Serial communication | $5-15 |
+| **MicroSD Card** | 8GB+ Class 10 | OS storage | $5-10 |
+| **Amazon Echo** | Any Echo device | Voice control (optional) | $20-50 |
+
+### Detailed Hardware Guide
+
+📋 **[Complete Hardware Setup Guide →](docs/HARDWARE_SETUP.md)**
+
+Our comprehensive guide includes:
+- ✅ Complete parts list with links
+- ✅ Battery tap installation with photos
+- ✅ Wiring diagrams and schematics
+- ✅ DC-DC converter configuration
+- ✅ Raspberry Pi mounting instructions
+- ✅ Troubleshooting and safety tips
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -300,33 +327,6 @@ python example-minimal.py
 - **pyserial** ≥ 3.5 - Serial communication
 - **python-dotenv** ≥ 1.0.0 - Environment configuration
 - **flask** ≥ 2.0.0 - Web server (for dashboard)
-
----
-
-## 🔧 Hardware Requirements
-
-### Essential Components
-
-| Item | Specification | Purpose | Approx. Cost |
-|------|--------------|---------|--------------|
-| **iRobot Roomba** | 500/600/700/800 series or Create 2 | Robot platform | $50-300 (used) |
-| **Raspberry Pi** | Pi Zero W / 3 / 4 | Embedded controller | $5-35 |
-| **DC-DC Converter** | 14.4V → 5V, 3A+ | Power for Pi | $5-10 |
-| **USB-Serial Cable** | FTDI or compatible | Serial communication | $5-15 |
-| **MicroSD Card** | 8GB+ Class 10 | OS storage | $5-10 |
-| **Amazon Echo** | Any Echo device | Voice control (optional) | $20-50 |
-
-### Detailed Hardware Guide
-
-📋 **[Complete Hardware Setup Guide →](docs/HARDWARE_SETUP.md)**
-
-Our comprehensive guide includes:
-- ✅ Complete parts list with links
-- ✅ Battery tap installation with photos
-- ✅ Wiring diagrams and schematics
-- ✅ DC-DC converter configuration
-- ✅ Raspberry Pi mounting instructions
-- ✅ Troubleshooting and safety tips
 
 ---
 
