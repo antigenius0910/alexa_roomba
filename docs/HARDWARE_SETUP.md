@@ -52,7 +52,7 @@ This guide provides step-by-step instructions for assembling the hardware to con
 
 ### Step 1: Workspace Setup
 
-![Workspace Overview](docs/images/60027188_10219907875067713_4528908490961321984_n.jpg)
+![Workspace Overview](images/60027188_10219907875067713_4528908490961321984_n.jpg)
 
 *A clean, well-lit workspace with all components laid out*
 
@@ -66,7 +66,7 @@ This guide provides step-by-step instructions for assembling the hardware to con
 
 ### Step 2: Understanding the Battery Connection
 
-![Battery and Components](docs/images/59619168_10219907874667703_1688925838235402240_n.jpg)
+![Battery and Components](images/59619168_10219907874667703_1688925838235402240_n.jpg)
 
 *Key components: Roomba battery (left), DC-DC converter (SMAKN, center-right), Raspberry Pi Zero W (right)*
 
@@ -81,7 +81,7 @@ The Roomba 880 uses a **14.4V lithium-ion battery**. We'll tap into this to powe
 
 ### Step 3: Locate Battery Connection Points
 
-![Roomba PCB with Battery Connection](docs/images/59685202_10219907873507674_4574336853972353024_n.jpg)
+![Roomba PCB with Battery Connection](images/59685202_10219907873507674_4574336853972353024_n.jpg)
 
 *Roomba's main PCB showing battery connection points (red and black wires already soldered)*
 
@@ -101,7 +101,7 @@ The Roomba 880 uses a **14.4V lithium-ion battery**. We'll tap into this to powe
 
 ### Step 4: Verify Battery Voltage
 
-![Multimeter Voltage Test](docs/images/59750354_10219907874587701_818143844859117568_n.jpg)
+![Multimeter Voltage Test](images/59750354_10219907874587701_818143844859117568_n.jpg)
 
 *Testing battery voltage with multimeter - shows 16.51V (fully charged)*
 
@@ -159,7 +159,7 @@ Battery (14.4V)                     Raspberry Pi
 
 ### Step 6: Mount Components Inside Roomba
 
-![Complete Internal Assembly](docs/images/60006570_10219907873947685_4945822375133315072_n.jpg)
+![Complete Internal Assembly](images/60006570_10219907873947685_4945822375133315072_n.jpg)
 
 *Fully assembled system showing all components installed inside Roomba*
 
@@ -203,7 +203,7 @@ Pin 6-7: GND (Ground) → Serial GND
 
 ### Step 8: Power On and Test
 
-![Roomba PCB Powered On](docs/images/59946132_10219907873667678_530918753047674880_n.jpg)
+![Roomba PCB Powered On](images/59946132_10219907873667678_530918753047674880_n.jpg)
 
 *Roomba's control board illuminated and operational*
 
