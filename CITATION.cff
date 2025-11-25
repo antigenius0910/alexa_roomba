@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+type: software
+title: "Alexa Roomba: Voice-Controlled Robot with iRobot Open Interface"
+abstract: "Voice-controlled Roomba via Amazon Echo with iRobot Open Interface protocol implementation. Features Alexa voice control, serial communication, sensor access, and music playback capabilities."
+authors:
+  - family-names: "Dodds"
+    given-names: "Zach"
+  - family-names: "Luke"
+    given-names: "Sean"
+  - family-names: "O'Beirne"
+    given-names: "James"
+  - family-names: "Schaef"
+    given-names: "Martin"
+repository-code: "https://github.com/antigenius0910/alexa_roomba"
+url: "https://github.com/antigenius0910/alexa_roomba"
+license: MIT
+version: 1.0.0
+date-released: 2025-01-01
+keywords:
+  - robotics
+  - iot
+  - voice-control
+  - alexa
+  - roomba
+  - smart-home
+  - raspberry-pi
+  - serial-communication
+  - open-interface
+  - home-automation

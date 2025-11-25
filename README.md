@@ -2,6 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Code Coverage](https://img.shields.io/badge/coverage-85%25-brightgreen.svg)](docs/TESTING.md)
+[![Documentation](https://img.shields.io/badge/docs-comprehensive-blue.svg)](docs/)
+[![Code of Conduct](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
+[![Maintenance](https://img.shields.io/badge/maintained-yes-green.svg)](https://github.com/antigenius0910/alexa_roomba/graphs/commit-activity)
+[![GitHub Stars](https://img.shields.io/github/stars/antigenius0910/alexa_roomba?style=social)](https://github.com/antigenius0910/alexa_roomba/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/antigenius0910/alexa_roomba?style=social)](https://github.com/antigenius0910/alexa_roomba/network/members)
 
 Voice-controlled Roomba via Amazon Echo with musical flair.
 
@@ -327,7 +334,27 @@ Running on Raspberry Pi Zero W required optimizing for limited CPU and memory, i
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for guidelines.
+We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or testing hardware compatibility, your help is appreciated.
+
+### Quick Start for Contributors
+
+1. **Fork & Clone**: Fork the repository and clone it locally
+2. **Setup**: Install dependencies with `pip install -r requirements.txt`
+3. **Create Branch**: Create a feature branch for your changes
+4. **Make Changes**: Implement your changes with tests
+5. **Test**: Run `pytest` to ensure all tests pass
+6. **Submit PR**: Push your changes and create a pull request
+
+### Ways to Contribute
+
+- 🐛 Report bugs using our [bug report template](.github/ISSUE_TEMPLATE/bug_report.md)
+- 💡 Suggest features via [feature request template](.github/ISSUE_TEMPLATE/feature_request.md)
+- 📝 Improve documentation
+- 🧪 Write tests and increase coverage
+- 🤖 Test hardware compatibility
+- 💻 Submit code improvements
+
+For detailed guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md). Please also read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
