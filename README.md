@@ -647,10 +647,161 @@ in the Software without restriction...
 
 ---
 
+<<<<<<< HEAD
 <div align="center">
+=======
+## Documentation
+
+Comprehensive documentation is available in the `docs/` directory:
+
+### 📚 User Guides
+- **[Hardware Setup Guide](docs/HARDWARE_SETUP.md)** - Complete hardware assembly instructions with photos and diagrams
+- **[API Documentation](docs/API.md)** - Detailed API reference with examples for all methods
+- **[Troubleshooting Guide](docs/TROUBLESHOOTING.md)** - Solutions for common issues and error messages
+
+### 🏗️ Developer Resources
+- **[Architecture Overview](docs/ARCHITECTURE.md)** - System design, patterns, and component interactions
+- **[Testing Guide](docs/TESTING.md)** - How to run tests, write new tests, and interpret coverage
+- **[Contributing Guidelines](CONTRIBUTING.md)** - How to contribute to the project
+- **[Changelog](CHANGELOG.md)** - Version history and release notes
+
+### 🔒 Policies
+- **[Code of Conduct](CODE_OF_CONDUCT.md)** - Community standards and expectations
+- **[Security Policy](SECURITY.md)** - How to report security vulnerabilities
+
+---
+
+## Configuration
+>>>>>>> 3585039 (Add contributing guidelines and open source maturity features)
 
 ### 🌟 Built with ❤️ by robotics enthusiasts for the maker community
 
 **[⬆ Back to Top](#-alexa-roomba)**
 
+<<<<<<< HEAD
 </div>
+=======
+# Alexa device settings
+FAUXMO_DEVICE_NAME = "Stardust Destroyer"
+FAUXMO_PORT = 52000
+
+# Robot physical parameters
+WHEEL_SPAN_MM = 235.0
+WHEEL_DIAMETER_MM = 72.0
+```
+
+---
+
+## Systemd Service (Auto-start on Boot)
+
+Create a systemd service for automatic startup:
+
+```bash
+sudo cp roomba.service /etc/systemd/system/
+sudo systemctl enable roomba.service
+sudo systemctl start roomba.service
+```
+
+Service file example:
+
+```ini
+[Unit]
+Description=Roomba keepalive daemon
+Wants=network-online.target
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/home/pi/alexa_roomba/roomba-start.sh
+StandardOutput=console
+
+[Install]
+WantedBy=multi-user.target
+```
+
+---
+
+## Lessons Learned & Technical Challenges
+
+### 1. Battery Tap Power Solution
+Safely tapping into the Roomba's 14.4V battery required careful voltage regulation. The DC-DC converter needed proper heat dissipation and capacitor placement to prevent voltage spikes during motor startup.
+
+### 2. Serial Protocol Reverse Engineering
+Implementing the iRobot Open Interface protocol required understanding two's complement arithmetic, byte packing, and timing-sensitive command sequences. See [PYTHON3_MIGRATION.md](docs/PYTHON3_MIGRATION.md) for details on the bytes handling migration.
+
+### 3. UPnP Device Emulation
+Emulating a WeMo device for Alexa discovery involved implementing SSDP multicast listening and HTTP response handling with proper UPnP headers.
+
+### 4. Embedded System Constraints
+Running on Raspberry Pi Zero W required optimizing for limited CPU and memory, implementing efficient polling loops, and handling serial timeouts gracefully.
+
+---
+
+## Contributing
+
+We welcome contributions from the community! Whether you're fixing bugs, adding features, improving documentation, or testing hardware compatibility, your help is appreciated.
+
+### How to Contribute
+
+1. **Read the Guidelines**: Check out [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines
+2. **Find an Issue**: Look for issues labeled [`good-first-issue`](https://github.com/antigenius0910/alexa_roomba/labels/good-first-issue) or [`help-wanted`](https://github.com/antigenius0910/alexa_roomba/labels/help-wanted)
+3. **Fork & Code**: Fork the repository, make your changes, and submit a pull request
+4. **Follow Standards**: Ensure your code passes tests and follows our coding standards
+
+### Ways to Contribute
+
+- 🐛 **Report Bugs**: Use our [bug report template](.github/ISSUE_TEMPLATE/bug_report.md)
+- 💡 **Suggest Features**: Submit ideas via [feature request template](.github/ISSUE_TEMPLATE/feature_request.md)
+- 📝 **Improve Docs**: Fix typos, add examples, or clarify instructions
+- 🧪 **Write Tests**: Increase test coverage or add hardware compatibility tests
+- 🤖 **Test Hardware**: Report compatibility with different Roomba models
+- 💻 **Submit Code**: Fix bugs or implement new features
+
+### Development Setup
+
+```bash
+# Fork and clone the repository
+git clone https://github.com/YOUR_USERNAME/alexa_roomba.git
+cd alexa_roomba
+
+# Create a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests
+pytest
+```
+
+### Community Guidelines
+
+- Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+- Be respectful and constructive
+- Help others learn and grow
+- Report security issues privately via [SECURITY.md](SECURITY.md)
+
+For detailed information, see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## Credits & References
+
+- Original concept: [Hacking the Amazon Echo (Instructables)](http://www.instructables.com/id/Hacking-the-Amazon-Echo/) by [FabricateIO](http://fabricate.io)
+- **Authors**: Zach Dodds, Sean Luke, James O'Beirne, Martin Schaef
+- **iRobot Open Interface**: [Official Documentation](https://www.irobot.com/about-irobot/stem/create-2)
+
+### Key Code Sections
+
+- Alexa integration: [fauxmo.py#L315](https://github.com/antigenius0910/alexa_roomba/blob/master/fauxmo.py#L315)
+- Imperial March playback: [create.py#L1474](https://github.com/antigenius0910/alexa_roomba/blob/master/create.py#L1474)
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+You are free to use, modify, and distribute this project for any purpose, including commercial use, as long as you include the original copyright notice.
+>>>>>>> 3585039 (Add contributing guidelines and open source maturity features)
